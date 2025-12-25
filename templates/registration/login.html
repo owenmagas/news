@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load crispy_forms_tags %}
 
 {% block title %}Log In{% endblock title %}
@@ -9,4 +9,5 @@
 {{ form|crispy }}
 <button class="btn btn-success ms-2" type="submit">Log In</button>
 </form>
+<p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
 {% endblock content %}
